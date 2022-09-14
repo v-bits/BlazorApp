@@ -4,19 +4,19 @@ namespace BlazorApp.Server.Test
     public class ServerUnitTest
     {
         [TestMethod]
+        public void TestMethod()
+        {
+            var expected = 1;
+            var actual = 0;
+
+            Assert.AreNotEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void TestMethodPass()
         {
             var expected = 1;
             var actual = 1;
-
-            Assert.AreEqual(expected, actual);
-        }
-
-        [TestMethod]
-        public void TestMethodFail()
-        {
-            var expected = 1;
-            var actual = 0;
 
             Assert.AreEqual(expected, actual);
         }

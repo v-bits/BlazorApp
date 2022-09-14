@@ -4,6 +4,15 @@ namespace BlazorApp.Shared.Test
     public class ClientUnitTest
     {
         [TestMethod]
+        public void TestMethod()
+        {
+            var expected = 1;
+            var actual = 0;
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
         public void TestMethodPass()
         {
             var expected = 1;
@@ -12,13 +21,5 @@ namespace BlazorApp.Shared.Test
             Assert.AreEqual(expected, actual);
         }
 
-        [TestMethod]
-        public void TestMethodFail()
-        {
-            var expected = 1;
-            var actual = 0;
-
-            Assert.AreEqual(expected, actual);
-        }
     }
 }
