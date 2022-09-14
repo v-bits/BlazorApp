@@ -54,7 +54,7 @@ jobs:
   deploy-2:
       name: 'Deploy QA'
       runs-on: ubuntu-latest
-      needs: build
+      needs: deploy-1
       environment: 
         name: 'QA'
         
