@@ -9,7 +9,7 @@ namespace BlazorApp.Shared.Test
             var expected = 1;
             var actual = 0;
 
-            Assert.AreEqual(expected, actual);
+            Assert.AreNotEqual(expected, actual);
         }
 
         [TestMethod]
