@@ -19,6 +19,9 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
+      
+    - name: 'echo'
+      run: echo 'hello'
     
     - name: Build
       run: dotnet build --no-restore --configuration Release
