@@ -4,9 +4,6 @@ on:
   push:
     branches: [ "master" ]
   workflow_dispatch:
- 
-env:
-a:'${{ echo secrets.MU_SECRET }}' 
 
 jobs:
   build:
@@ -22,9 +19,6 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
-      
-    -name: TESTING
-      run: echo ${{ env.a }}
     
     - name: Build
       run: dotnet build --no-restore --configuration Release
