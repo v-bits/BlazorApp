@@ -20,8 +20,8 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
       
-    - name: 'echo'
-      run: echo ${{ echo secrets.MU_SECRET }}
+    - name: testing
+      run: echo '${{ echo secrets.MU_SECRET }}'
     
     - name: Build
       run: dotnet build --no-restore --configuration Release
