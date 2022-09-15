@@ -21,7 +21,7 @@ jobs:
       run: dotnet restore
       
     - name: 'echo'
-      run: ${{ echo secrets.MU_SECRET }}
+      run: echo ${{ echo secrets.MU_SECRET }}
     
     - name: Build
       run: dotnet build --no-restore --configuration Release
